@@ -158,16 +158,19 @@ footer {
     font-size: 14px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(135deg, #8e2de2, #4a00e0);
-    border: 2px solid #d9b3ff;
+    background: linear-gradient(135deg, #8d5804, #e7d406);
+    border: 2px solid #e7ff4a;
     border-radius: 20px;
     cursor: pointer;
     letter-spacing: 1.5px;
     transition: all 0.3s ease;
 }
 
-.botaoMagico:hover {
-    background: linear-gradient(135deg, #d9b3ff, #8e2de2);
-    box-shadow: 0 0 15px 4px rgba(217, 179, 255, 0.9), inset 0 0 8px rgba(255, 255, 255, 0.5);
-    transform: scale(1.08);
+.botaoLuizao:hover {
+    background: linear-gradient(135deg, #ffff00, #c6a606);
+    transform: scale(1.5);
+}
+
+.botaoLuizao:active {
+    transform: scale(0.95);
 }
