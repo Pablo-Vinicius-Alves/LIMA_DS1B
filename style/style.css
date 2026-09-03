@@ -1,35 +1,39 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     background-color: bisque;
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     background-color: rgb(121, 121, 121);
-    border: 3px;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
+    border: 3px solid black;
     border-radius: 20px;
     width: 97%;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin: 0 auto;
 }
-.cabecalho{
-    font-size: 30px;
-    font-style: italic; 
+
+.cabecalho {
+    font-size: 40px;
+    font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 451;
-    
+    min-width: 451px;
     color: rgb(128, 221, 35);
+    margin: 0;
 }
-.bordainterna{
+
+.bordainterna {
     background-color: rgb(120, 16, 14);
-    padding: 30px;
+    padding: 60px;
     border: 5px solid black;
     border-radius: 10px;
     display: flex;
@@ -37,99 +41,127 @@ header{
     align-items: center;
     width: 85%;
     height: 65px;
-    
 }
 
-main{
-    border: 3px;
-    border-style: solid;
+main {
     background-color: rgb(85, 105, 51);
-    margin-top: 10px;
-    border: 3px;
-    border-style: solid;
+    margin: 10px auto 0;
+    border: 3px solid black;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 97%;
-    height: 500px;
+    min-height: 500px;
+    padding: 20px 0;
 }
 
-img{
-    border:1px solid black ;
+.principal {
+    font-size: 20px;
+    width: 85%;
+    height: 95%;
+    border: 1px solid black;
+    background-color: rgb(86, 51, 5);
+    padding: 15px;
+}
+
+.artCenter {
+    font-size: 50px;
+    color: rgb(128, 221, 35);
+    display: flex;
+    justify-content: center;
+}
+
+.artCenter h2 {
+    margin: 5px 0 15px;
+}
+
+.distribuida {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 10px;
+}
+
+.artImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.artImage:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #fc1100;
+    border-color: #fc0000;
+}
+
+img {
+    border: 1px solid rgba(0, 0, 0, 0.4);
     width: 130px;
     height: 130px;
-    background-size: cover;
     box-shadow: black 5px 0.3px 10px 2px;
     background-color: white;
-    opacity: 1;
-    transition: background white 0.5s ease;
-}
-img:hover{
-    background: rgb(88, 78, 78);
+    transition: background-color 0.5s ease;
 }
 
-footer{
+img:hover {
+    background-color: rgb(88, 78, 78);
+}
+
+.nomeProduto {
+    font-weight: bold;
+    margin: 8px 0 2px;
+    color: rgb(86, 51, 5);
+    text-align: center;
+}
+
+.preco {
+    color: rgb(120, 16, 14);
+    font-weight: bold;
+    margin: 0;
+}
+
+footer {
     background-color: rgb(120, 16, 14);
-    margin-top: 8px;
+    margin: 8px auto 0;
     padding: 0;
-    border: 3px;
-    border-style: solid;
-    border-color: black;
+    border: 3px solid black;
     border-radius: 20px;
-    
     width: 97%;
     height: 97px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bordafooter{
-    background-color: rgb(120, 16, 14);
-    padding: 5px;
-    border: 5px solid black;
-    border-radius: 10px;
+
+.bordafooter {
+    font-size: 50px;
+    font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 88%;
-    height: 65px;
-}
-
-.principal{
-    width: 85%;
-    height: 95%;
-    border: 1px;
-    border-style: solid;
-    background-color: rgb(86, 51, 5);
-}
-
-.artCenter{
-    font-size: 20px;
+    min-width: 451px;
     color: rgb(128, 221, 35);
-    display: flex;
-    justify-content: center;
+    margin: 0;
 }
 
-.distribuida{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 25px;
-    padding: 10px;
-}
-
-.artImage{
-    display: flex;
-    justify-content: center;
-    align-items: center;     border:1px solid;
-    width: 100px;
-    height: 130px;
-    transition: background white 0.5 ease;
-    background-color: white;
+.botaoLuizao {
+    margin-top: 8px;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    border: 2px solid #d9b3ff;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
     transition: all 0.3s ease;
-}
-.artImage:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #fc1100;
-    border-color: #fc0000;
 }
